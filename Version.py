@@ -20,12 +20,12 @@ import sys
 #---------------------------------------------------------------------------
 import os 
 
-os.add_dll_directory(os.path.abspath("vki-devtools/dependencies/odbapi/windows/bin"))
-os.add_dll_directory(os.path.abspath("vki-devtools/dependencies/zlib/windows/bin"))
-os.add_dll_directory(os.path.abspath("vki-devtools/dependencies/hdf5/windows/bin"))
-os.add_dll_directory(os.path.abspath("vki-devtools/dependencies/libccmio/windows/x64/bin"))
-os.add_dll_directory(os.path.abspath("vki-devtools/dependencies/cgns/windows/bin"))
-os.add_dll_directory(os.path.abspath("license/bin"))
+os.add_dll_directory(os.path.abspath("dll/odbapi/2022x"))
+os.add_dll_directory(os.path.abspath("dll/zlib"))
+os.add_dll_directory(os.path.abspath("dll/hdf5"))
+os.add_dll_directory(os.path.abspath("dll/ccmio"))
+os.add_dll_directory(os.path.abspath("dll/cgns"))
+os.add_dll_directory(os.path.abspath("dll/license"))
 # #os.add_dll_directory("D:/VMoveCAE-Classic/dependencies/python310")
 # D:/VMoveCAE-Classic-2/VMoveCAE-Classic-Workshop
 
