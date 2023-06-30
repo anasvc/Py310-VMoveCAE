@@ -1,0 +1,54 @@
+Include
+=======
+Include Client_V3.h
+
+Lib
+===
+Link VctLicenseApi_1_0_3_vc15_6_x64_Release.lib
+
+Dlls
+====
+Following dlls are required
+1. VctLicenseApi_1_0_3_vc15_6_x64_Release.dll
+2. VCollabSuiteLicense_64_11_14_0_0_4_vc15_6.dll
+
+
+Methods
+=======
+1. Enabling the Idleness of the application
+-------------------------------------------
+	
+	void SetIdleEnabled(bool bIdle)
+	
+	-This method is used to notify the License Server that the application is Idle or Not
+	
+	Vct::License::Client::get().SetIdleEnabled(bool bIdle);
+
+	1. Pass 'false' if application is active   //It keeps sending the Heart Beats to License Server and it denotes that application is active
+	2. Pass 'true' if the application is idle  //It will stop sending the Heart Beats to License Server
+	
+	
+	Example:
+	For batchmode, 
+	-------------
+	-Call 'SetIdleEnabled(false)' when the application is started.
+	-We don't need to call 'SetIdleEnabled(true)' for batch applications
+	
+	For Gui Mode,
+	-------------
+	-Call 'SetIdleEnabled(false)' when the application is launched. It keeps sending the HeartBeats.
+	-Call 'SetIdleEnabled(true)' when the application is idle and call 'SetIdleEnabled(false)' when the application is active again
+	
+
+2. Getting License Status
+-------------------------
+	
+	int GetCurrentLicenseStatus();
+	
+	-The method is used to get the status of current license
+
+	int iLicStatus = Vct::License::Client::get().GetCurrentLicenseStatus();
+
+	Return Value:
+	1 - Acquired License
+	2 - Not acquired License
