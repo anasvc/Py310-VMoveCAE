@@ -369,8 +369,8 @@ class CaeEngine:
             return '%.2f B' % size
 
     def GetLinkedFilesSize(self, fname):
-        
-        fname = fname.decode()
+        if not isinstance(fname, str):
+            fname = fname.decode()
         if fname.endswith('d3plot'):
             size = 0.0
             flist = glob.glob(fname + "*")
@@ -441,8 +441,11 @@ class CaeEngine:
             trans_flags = trans_flags | 0x10
         if self.disable_skinning:
             trans_flags = trans_flags | 0x20
-        
-        tr_output = self.cpp_lib.saveCax(filename.decode(), trans_string.decode(), trans_flags)
+        if not isinstance(filename, str):
+            filename = filename.decode()
+        if not isinstance(trans_string, str):
+            trans_string = trans_string.decode()
+        tr_output = self.cpp_lib.saveCax(filename, trans_string, trans_flags)
        
         if self.pi_file:
             self.cpp_lib.closePIFile()
