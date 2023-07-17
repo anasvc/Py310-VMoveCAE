@@ -1,15 +1,24 @@
 
 ## VmoveCAE Scripts for Python 3.10.5
 # Requirements
+
     1 - Install Python 3.10.5 
         https://www.python.org/downloads/release/python-3105/
-    2 - Update Packages
-        pip install -r packages.txt
-# Usage
-Create and Activate the python virtual environment for version 3.10.5 and follow the steps - 
 
-    1 - VMoveCAE GUI 
-        python VmoveCAE.py
+    2 - Update Packages
+        pip install -r requirements.txt
+
+# Usage
+
+    a - Create and Activate the python virtual environment for version 3.10.5.
+    b-  Update the python path in Batch files (using notepad)
     
-    2 - Batch Mode
-        python VMoveCAEBatch.py input-file-path output-file-path
+    And follow the steps 
+
+    2 - To Open VMoveCAE GUI and Translate 
+        
+        Run "VMoveCAE.bat" in CommandPrompt
+    
+    2 - To Translate in Batch mode 
+
+        Run "VMoveCAEBatch" <input-file-path> <cax-file-path> in CommandPrompt
