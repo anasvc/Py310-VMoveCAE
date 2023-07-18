@@ -10,15 +10,16 @@
 
 # Usage
 
-    a - Create and Activate the python virtual environment for version 3.10.5.
-    b-  Update the python path in Batch files (using notepad)
+    3 - Create and Activate the python virtual environment for version 3.10.5.
+   
+    4-  Update the python path in Batch files (using notepad)
     
     And follow the steps 
 
-    2 - To Open VMoveCAE GUI and Translate 
+    5 - To Open VMoveCAE GUI and Translate 
         
         Run "VMoveCAE.bat" in CommandPrompt
     
-    2 - To Translate in Batch mode 
+    6 - To Translate in Batch mode 
 
-        Run "VMoveCAEBatch" <input-file-path> <cax-file-path> in CommandPrompt
+        Run "VMoveCAEBatch.bat" <input-file-path> <cax-file-path> in CommandPrompt
