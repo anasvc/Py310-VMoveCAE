@@ -1,2 +1,0 @@
-str2bool==1.1
-wxPython==4.2.0

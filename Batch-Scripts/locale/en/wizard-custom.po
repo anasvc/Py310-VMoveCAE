@@ -1,0 +1,5 @@
+
+#: ODB Upgrade wizard
+msgid "&Finish"
+msgstr "&Upgrade"
+
