@@ -4,10 +4,10 @@
 
 It has two folders 
 
-# 1. one contains .exe  files in 
+# 1. "exe-files" folder contains .exe  files in 
                       a - one file format and,
                       b - one folder format
                       
-# 2. Second folder contain Batch file and related scripts.
+# 2. "Batch-Scripts" folder contain Batch file and related scripts.
 
                   
